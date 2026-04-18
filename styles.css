@@ -532,61 +532,142 @@ p { margin: 0 0 var(--space-sm); }
   object-position: center 26%;
 }
 
-/* ---- Compact About ---- */
-.compact-about-section {
+/* ---- About / Qui suis-je ? ---- */
+.about-section {
   padding-top: var(--space-md);
 }
 
-.compact-about-card {
+.about-card {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-  gap: 22px;
-  padding: clamp(24px, 3vw, 34px);
-  background: linear-gradient(135deg, rgba(245, 240, 225, 0.85), rgba(255, 255, 255, 0.98));
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+  gap: clamp(24px, 4vw, 40px);
+  padding: clamp(24px, 3vw, 38px);
+  background: linear-gradient(135deg, rgba(245, 240, 225, 0.88), rgba(255, 255, 255, 0.98));
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
+  align-items: center;
 }
 
-.compact-about-copy {
-  max-width: 62ch;
+.about-copy {
+  max-width: 64ch;
 }
 
-.compact-about-copy .eyebrow {
+.about-copy .eyebrow {
   margin-bottom: 12px;
 }
 
-.compact-about-copy h2 {
+.about-copy h2 {
   margin-bottom: 18px;
 }
 
-.compact-about-copy p {
+.about-copy p {
   color: var(--text-muted);
   margin-bottom: 14px;
 }
 
-.compact-about-copy p:last-child {
-  margin-bottom: 0;
+.about-intro {
+  font-size: 1.04rem;
+  line-height: 1.78;
 }
 
-.compact-focuses {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  align-content: start;
-}
-
-.compact-focuses span {
+.about-signature {
   display: flex;
-  align-items: center;
-  min-height: 100%;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 22px 0 0;
   padding: 16px 18px;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(107, 123, 60, 0.16);
+  background: rgba(107, 123, 60, 0.08);
+  border: 1px solid rgba(107, 123, 60, 0.12);
+}
+
+.about-signature span {
+  color: var(--sage);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.about-signature p {
+  margin: 0;
   color: var(--text);
   font-weight: 600;
-  line-height: 1.45;
+}
+
+.about-notes {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.about-notes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--text-muted);
+}
+
+.about-notes li span {
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.about-portrait {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+
+.about-portrait-frame {
+  width: min(100%, 300px);
+  aspect-ratio: 4 / 5;
+  padding: 12px;
+  border-radius: calc(var(--radius-xl) - 4px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(245, 240, 225, 0.9));
+  border: 1px solid rgba(107, 123, 60, 0.14);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-portrait-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: calc(var(--radius-xl) - 12px);
+  border: 1.5px dashed rgba(107, 123, 60, 0.28);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.about-portrait-icon {
+  font-size: 1.8rem;
+}
+
+.about-portrait-placeholder p,
+.about-portrait-placeholder small,
+.about-portrait-caption {
+  margin: 0;
+}
+
+.about-portrait-placeholder p {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.about-portrait-placeholder small,
+.about-portrait-caption {
+  color: var(--text-light);
+}
+
+.about-portrait-caption {
+  max-width: 28ch;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 /* ---- Steps ---- */
@@ -810,7 +891,7 @@ p { margin: 0 0 var(--space-sm); }
   .hero,
   .cards-grid.three,
   .cards-grid.two,
-  .compact-about-card,
+  .about-card,
   .apa-layout,
   .image-story,
   .contact-section,
@@ -911,15 +992,13 @@ p { margin: 0 0 var(--space-sm); }
     min-height: 300px;
   }
 
-  .compact-focuses {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+  .about-card {
+    gap: 22px;
   }
 
-  .compact-focuses span {
-    padding: 14px 12px;
-    font-size: 0.88rem;
-    line-height: 1.35;
+  .about-copy,
+  .about-portrait {
+    max-width: none;
   }
 
   .story-photo,
@@ -962,7 +1041,7 @@ p { margin: 0 0 var(--space-sm); }
     padding-inline: 12px;
   }
 
-  .compact-focuses span {
-    font-size: 0.82rem;
+  .about-signature {
+    padding: 14px 16px;
   }
 }
