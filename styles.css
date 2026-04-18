@@ -849,6 +849,26 @@ p { margin: 0 0 var(--space-sm); }
   color: var(--text-light);
 }
 
+.contact-form button[disabled] {
+  opacity: 0.8;
+  cursor: wait;
+}
+
+.form-status {
+  min-height: 1.4em;
+  margin: -6px 0 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.form-status.is-success {
+  color: var(--sage);
+}
+
+.form-status.is-error {
+  color: #a14e3b;
+}
+
 .form-note {
   margin: 0;
   font-size: 0.88rem;
