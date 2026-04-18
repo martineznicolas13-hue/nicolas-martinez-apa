@@ -929,8 +929,9 @@ p { margin: 0 0 var(--space-sm); }
 .link-chip-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
-  margin-top: 18px;
+  margin-top: 0;
 }
 
 .link-chip {
