@@ -607,6 +607,7 @@ p { margin: 0 0 var(--space-sm); }
   padding: 0;
   margin: 14px 0 0;
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -994,6 +995,10 @@ p { margin: 0 0 var(--space-sm); }
   .about-copy,
   .about-portrait {
     max-width: none;
+  }
+
+  .about-notes {
+    grid-template-columns: 1fr;
   }
 
   .story-photo,
