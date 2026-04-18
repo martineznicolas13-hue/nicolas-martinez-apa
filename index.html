@@ -103,11 +103,6 @@
                 Demander la séance d'essai
               </a>
             </div>
-            <ul class="hero-points" aria-label="Points clés">
-              <li>Licence en activité physique adaptée et santé</li>
-              <li>Plus de 10 ans d'expérience auprès de publics adaptés</li>
-              <li>Un suivi régulier avec des repères simples et utiles au quotidien</li>
-            </ul>
           </div>
 
           <aside class="hero-visual" aria-label="Accompagnement sur un parcours d'équilibre et de marche">
@@ -150,28 +145,6 @@
                 coordination ou réadaptation à l'effort.
               </p>
             </article>
-          </div>
-        </section>
-
-        <!-- Benefits -->
-        <section class="section emphasis-section reveal">
-          <div>
-            <p class="eyebrow">Ce que l'on travaille ensemble</p>
-            <h2>Des progrès concrets qui se ressentent dans la vraie vie.</h2>
-          </div>
-          <div class="benefits-grid">
-            <span>Équilibre</span>
-            <span>Cardio adapté</span>
-            <span>Force fonctionnelle</span>
-            <span>Coordination</span>
-            <span>Aide à la marche</span>
-            <span>Mobilité</span>
-            <span>Autonomie</span>
-            <span>Promenade sportive</span>
-            <span>Confiance</span>
-            <span>Perte de poids encadrée</span>
-            <span>Remise en mouvement</span>
-            <span>Prévention du déconditionnement</span>
           </div>
         </section>
 
@@ -278,39 +251,6 @@
           </div>
         </section>
 
-        <!-- About -->
-        <section class="section reveal" id="apropos">
-          <div class="section-heading">
-            <p class="eyebrow">À propos</p>
-            <h2>Une approche experte, proche et rassurante.</h2>
-          </div>
-          <div class="about-layout">
-            <article class="about-card main">
-              <h3>Nicolas Martinez</h3>
-              <p class="subtitle">Enseignant en activité physique adaptée & coach santé</p>
-              <p>
-                Titulaire d'une <strong>Licence en activité physique adaptée et santé</strong> à la faculté des sciences du sport,
-                j'accompagne depuis plus de <strong>10 ans</strong> des publics ayant besoin d'un cadre plus personnalisé,
-                plus progressif et plus attentif.
-              </p>
-              <p>
-                Avec plus de <strong>15 ans d'expérience dans l'encadrement de séances</strong>, je propose une méthode à la
-                fois humaine, structurée et exigeante juste ce qu'il faut pour créer des progrès durables.
-              </p>
-            </article>
-            <article class="about-card values">
-              <h3>Ce que vous trouverez ici</h3>
-              <ul>
-                <li>De l'écoute</li>
-                <li>Un vrai sens de l'adaptation</li>
-                <li>Une exigence calme et bien dosée</li>
-                <li>Un cadre professionnel sans froideur</li>
-                <li>Un accompagnement pensé pour durer</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
         <!-- Steps -->
         <section class="section reveal" id="methode">
           <div class="section-heading">
@@ -364,6 +304,31 @@
               <summary>Affichez-vous vos tarifs ?</summary>
               <p>Je vous explique simplement les possibilités après un premier échange et la séance d'essai offerte, pour choisir un rythme adapté à votre besoin.</p>
             </details>
+          </div>
+        </section>
+
+        <!-- Compact about -->
+        <section class="section compact-about-section reveal" id="apropos">
+          <div class="compact-about-card">
+            <div class="compact-about-copy">
+              <p class="eyebrow">À propos</p>
+              <h2>Un accompagnement expérimenté, simple et rassurant.</h2>
+              <p>
+                Titulaire d'une <strong>Licence en activité physique adaptée et santé</strong>, j'accompagne depuis plus de
+                <strong>10 ans</strong> des publics qui ont besoin d'un cadre personnalisé, progressif et attentif, avec plus de
+                <strong>15 ans d'expérience dans l'encadrement de séances</strong>.
+              </p>
+              <p>
+                Ensemble, nous travaillons l'essentiel pour que cela soit utile dans la vraie vie : bouger plus facilement,
+                reprendre confiance, entretenir votre condition et préserver votre autonomie dans la durée.
+              </p>
+            </div>
+            <div class="compact-focuses" aria-label="Axes de travail">
+              <span>Équilibre & marche</span>
+              <span>Endurance adaptée</span>
+              <span>Renforcement doux</span>
+              <span>Autonomie & confiance</span>
+            </div>
           </div>
         </section>
 
@@ -460,6 +425,54 @@
           });
         }, { threshold: 0.12 });
         els.forEach(function (el) { observer.observe(el); });
+      })();
+
+      /* Mobile header visibility */
+      (function () {
+        var header = document.querySelector('.site-header');
+        if (!header) {
+          return;
+        }
+        var mobileQuery = window.matchMedia('(max-width: 720px)');
+        var lastScrollY = window.scrollY;
+        var suppressUntil = 0;
+        var mobileHeaderLinks = header.querySelectorAll('a[href^="#"]');
+
+        mobileHeaderLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            suppressUntil = Date.now() + 900;
+            header.classList.remove('is-mobile-hidden');
+          });
+        });
+
+        function updateHeaderVisibility() {
+          var currentScrollY = window.scrollY;
+          var delta = currentScrollY - lastScrollY;
+
+          if (!mobileQuery.matches) {
+            header.classList.remove('is-mobile-hidden');
+            lastScrollY = currentScrollY;
+            return;
+          }
+
+          if (Date.now() < suppressUntil) {
+            header.classList.remove('is-mobile-hidden');
+            lastScrollY = currentScrollY;
+            return;
+          }
+
+          if (currentScrollY <= 24 || delta < -10) {
+            header.classList.remove('is-mobile-hidden');
+          } else if (delta > 10 && currentScrollY > 96) {
+            header.classList.add('is-mobile-hidden');
+          }
+
+          lastScrollY = currentScrollY;
+        }
+
+        window.addEventListener('scroll', updateHeaderVisibility, { passive: true });
+        window.addEventListener('resize', updateHeaderVisibility);
+        updateHeaderVisibility();
       })();
     </script>
   </body>
