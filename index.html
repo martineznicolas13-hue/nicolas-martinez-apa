@@ -178,14 +178,21 @@
         <!-- Story image -->
         <section class="section image-story reveal" aria-label="Ambiance des séances">
           <div class="story-photo">
-            <img
-              src="images/story-coach-halteres.png"
-              alt="Coach en activité physique adaptée qui accompagne une personne avec des haltères légers"
-              width="960"
-              height="1200"
-              loading="lazy"
-              decoding="async"
-            />
+            <video
+              class="story-video"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="metadata"
+              poster="images/story-coach-halteres.png"
+              width="560"
+              height="704"
+              aria-label="Vidéo en boucle montrant un accompagnement doux en activité physique adaptée"
+            >
+              <source src="images/seance-apa-galerie.mp4" type="video/mp4" />
+              Votre navigateur ne prend pas en charge la lecture vidéo intégrée.
+            </video>
           </div>
           <div class="story-copy">
             <p class="eyebrow">En douceur, au bon rythme</p>
@@ -239,73 +246,40 @@
           </div>
         </section>
 
-        <!-- Gallery -->
-        <section class="section gallery-section reveal" aria-label="Galerie et média des accompagnements">
-          <div class="section-heading compact">
-            <p class="eyebrow">Galerie & média</p>
-            <h2>Quelques aperçus du rythme, du cadre et des exercices proposés.</h2>
-          </div>
-          <div class="gallery-grid">
-            <figure class="gallery-card media-card">
-              <video
-                class="gallery-video"
-                autoplay
-                loop
-                muted
-                playsinline
-                preload="metadata"
-                width="560"
-                height="704"
-                aria-label="Vidéo en boucle montrant un accompagnement doux en activité physique adaptée"
-              >
-                <source src="images/seance-apa-galerie.mp4" type="video/mp4" />
-                Votre navigateur ne prend pas en charge la lecture vidéo intégrée.
-              </video>
-              <figcaption>Mobilité, souplesse et repères corporels dans un environnement tranquille.</figcaption>
-            </figure>
-            <figure class="gallery-card">
+        <!-- APA explanation -->
+        <section class="section soft-panel reveal" id="apa">
+          <div class="apa-layout">
+            <div class="apa-copy">
+              <div class="section-heading compact">
+                <p class="eyebrow">C'est quoi l'APA ?</p>
+                <h2>L'activité physique adaptée, c'est bouger de façon utile, encadrée et personnalisée.</h2>
+              </div>
+              <p>
+                L'activité physique adaptée tient compte de votre âge, de votre condition physique, de vos fragilités
+                éventuelles et de vos objectifs. Le but n'est pas la performance.
+              </p>
+              <p>
+                Le but est de <strong>bouger mieux</strong>, de <strong>gagner en confiance</strong>, de <strong>préserver votre autonomie</strong>
+                et de vous aider à rester actif le plus longtemps possible.
+              </p>
+              <div class="apa-benefits" aria-label="Principes de l'activité physique adaptée">
+                <span>Exercices ajustés à votre niveau</span>
+                <span>Cadre rassurant et progressif</span>
+                <span>Objectifs utiles dans la vie quotidienne</span>
+              </div>
+            </div>
+            <figure class="apa-visual">
               <img
-                src="images/illustration-accompagnement-apa.png"
-                alt="Illustration d'un accompagnement en activité physique adaptée"
+                src="images/apa-section-accompagnement.jpg"
+                alt="Nicolas Martinez accompagne une participante lors d'un exercice d'activité physique adaptée"
+                width="1024"
+                height="1024"
                 loading="lazy"
                 decoding="async"
               />
-              <figcaption>Un accompagnement progressif, rassurant et pensé pour le rythme de chacun.</figcaption>
-            </figure>
-            <figure class="gallery-card media-card">
-              <video
-                class="gallery-video"
-                autoplay
-                loop
-                muted
-                playsinline
-                preload="metadata"
-                width="560"
-                height="704"
-                aria-label="Extrait vidéo d'un accompagnement en activité physique adaptée"
-              >
-                <source src="images/seance-apa-galerie.mp4" type="video/mp4" />
-                Votre navigateur ne prend pas en charge la lecture vidéo intégrée.
-              </video>
-              <figcaption>Un aperçu en mouvement d'un accompagnement doux, progressif et vraiment personnalisé.</figcaption>
+              <figcaption>Un accompagnement concret, progressif et pensé pour redonner confiance dans le mouvement.</figcaption>
             </figure>
           </div>
-        </section>
-
-        <!-- APA explanation -->
-        <section class="section soft-panel reveal" id="apa">
-          <div class="section-heading compact">
-            <p class="eyebrow">C'est quoi l'APA ?</p>
-            <h2>L'activité physique adaptée, c'est bouger de façon utile, encadrée et personnalisée.</h2>
-          </div>
-          <p>
-            L'activité physique adaptée tient compte de votre âge, de votre condition physique, de vos fragilités
-            éventuelles et de vos objectifs. Le but n'est pas la performance.
-          </p>
-          <p>
-            Le but est de <strong>bouger mieux</strong>, de <strong>gagner en confiance</strong>, de <strong>préserver votre autonomie</strong>
-            et de vous aider à rester actif le plus longtemps possible.
-          </p>
         </section>
 
         <!-- About -->
