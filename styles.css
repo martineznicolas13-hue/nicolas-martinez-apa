@@ -523,8 +523,9 @@ p { margin: 0 0 var(--space-sm); }
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
-  padding: var(--space-lg);
+  padding: clamp(32px, 4vw, 56px);
   text-align: left;
+  overflow: hidden;
 }
 
 .soft-panel p {
@@ -533,14 +534,22 @@ p { margin: 0 0 var(--space-sm); }
 
 .apa-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.72fr);
-  gap: clamp(24px, 4vw, 52px);
-  align-items: center;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: stretch;
 }
 
 .apa-copy {
   display: grid;
-  gap: 14px;
+  min-width: 0;
+}
+
+.apa-copy-inner {
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  min-height: 100%;
+  max-width: 560px;
 }
 
 .apa-copy .section-heading {
@@ -548,27 +557,29 @@ p { margin: 0 0 var(--space-sm); }
 }
 
 .apa-copy p {
-  max-width: 60ch;
+  max-width: 56ch;
   margin: 0;
 }
 
 .apa-visual {
   margin: 0;
-  width: min(100%, 360px);
+  width: min(100%, 460px);
   justify-self: end;
+  align-self: stretch;
+  min-height: clamp(360px, 40vw, 500px);
   border-radius: calc(var(--radius-xl) - 6px);
   overflow: hidden;
   border: 1px solid rgba(107, 123, 60, 0.14);
   background: rgba(255, 255, 255, 0.55);
-  box-shadow: 0 16px 36px rgba(41, 48, 35, 0.12);
+  box-shadow: var(--shadow-lg);
 }
 
 .apa-visual img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 4.6;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 26%;
 }
 
 /* ---- About ---- */
@@ -867,9 +878,14 @@ p { margin: 0 0 var(--space-sm); }
     max-width: none;
   }
 
+  .apa-copy-inner {
+    max-width: none;
+  }
+
   .apa-visual {
     justify-self: center;
-    width: min(100%, 340px);
+    width: min(100%, 420px);
+    min-height: 340px;
   }
 
   .site-header {
@@ -902,6 +918,15 @@ p { margin: 0 0 var(--space-sm); }
   .section { padding: var(--space-lg) 0; }
 
   .soft-panel { padding: var(--space-md); }
+
+  .apa-layout {
+    gap: 24px;
+  }
+
+  .apa-visual {
+    width: 100%;
+    min-height: 300px;
+  }
 
   .story-photo,
   .story-photo img,
