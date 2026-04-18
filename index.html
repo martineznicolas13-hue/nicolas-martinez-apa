@@ -12,6 +12,8 @@
       name="keywords"
       content="activité physique adaptée, coach santé, Saint-Maime, seniors, autonomie, équilibre, marche, remise en mouvement, réadaptation à l'effort"
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.activite-physique-adaptee-nicolas-martinez.fr/" />
     <meta name="theme-color" content="#FAFAF5" />
     <meta property="og:title" content="Nicolas Martinez | Activité physique adaptée & coach santé" />
     <meta
@@ -19,35 +21,132 @@
       content="Un accompagnement sérieux, rassurant et personnalisé pour bouger mieux, retrouver confiance et préserver son autonomie."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.activite-physique-adaptee-nicolas-martinez.fr/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nicolas Martinez",
-        "jobTitle": "Enseignant en activité physique adaptée et coach santé",
-        "telephone": "+33678235875",
-        "email": "martineznicolas13@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Saint-Maime",
-          "postalCode": "04300",
-          "addressCountry": "FR"
-        },
-        "areaServed": "Saint-Maime et villes alentours dans un rayon d'environ 30 km",
-        "alumniOf": "Faculté des sciences du sport",
-        "description": "Accompagnement personnalisé à domicile et en extérieur pour retrouver autonomie, équilibre, confiance et forme durablement.",
-        "knowsAbout": [
-          "activité physique adaptée",
-          "coach santé",
-          "autonomie des seniors",
-          "équilibre",
-          "aide à la marche",
-          "cardio adapté",
-          "renforcement léger",
-          "promenade sportive",
-          "perte de poids encadrée"
+        "@graph": [
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://www.activite-physique-adaptee-nicolas-martinez.fr/#business",
+            "name": "Nicolas Martinez - Activité physique adaptée",
+            "url": "https://www.activite-physique-adaptee-nicolas-martinez.fr/",
+            "image": "https://www.activite-physique-adaptee-nicolas-martinez.fr/images/hero-parcours-equilibre.png",
+            "telephone": "+33678235875",
+            "email": "martineznicolas13@gmail.com",
+            "description": "Enseignant en activité physique adaptée et coach santé à Saint-Maime. Séances à domicile et en extérieur pour seniors, jeunes retraités et personnes souhaitant reprendre une activité en douceur.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Saint-Maime",
+              "postalCode": "04300",
+              "addressCountry": "FR"
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Nicolas Martinez"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Saint-Maime"
+              },
+              {
+                "@type": "City",
+                "name": "Forcalquier"
+              },
+              {
+                "@type": "City",
+                "name": "Volx"
+              },
+              {
+                "@type": "City",
+                "name": "Manosque"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Autour de Saint-Maime, dans un rayon d'environ 20 à 30 km"
+              }
+            ],
+            "availableLanguage": "fr",
+            "serviceType": [
+              "Activité physique adaptée",
+              "Coach santé",
+              "Séances à domicile",
+              "Séances en extérieur",
+              "Accompagnement des seniors",
+              "Reprise d'activité en douceur"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Accompagnements proposés",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Séances individuelles à domicile",
+                    "description": "Séances personnalisées à domicile pour travailler mobilité, équilibre et remise en mouvement."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Séances en extérieur",
+                    "description": "Marche, mobilité, respiration et reprise progressive dans un cadre calme."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Suivi régulier",
+                    "description": "Accompagnement dans le temps pour des progrès utiles au quotidien."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.activite-physique-adaptee-nicolas-martinez.fr/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Faut-il déjà être sportif pour commencer ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non. L'accompagnement est pensé pour s'adapter au niveau de départ et aux capacités du moment."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Intervenez-vous uniquement auprès des seniors ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "La priorité est donnée aux personnes âgées, aux jeunes retraités et aux personnes ayant besoin d'un accompagnement santé personnalisé, mais d'autres profils peuvent être étudiés selon le besoin."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Proposez-vous des accompagnements à domicile ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui. Nicolas Martinez intervient à domicile ainsi qu'en extérieur autour de Saint-Maime, dans un rayon d'environ 20 à 30 km selon le lieu de séance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Affichez-vous vos tarifs ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les possibilités sont expliquées simplement après un premier échange et la séance d'essai offerte, afin de choisir un rythme adapté au besoin."
+                }
+              }
+            ]
+          }
         ]
       }
     </script>
@@ -65,6 +164,7 @@
         <nav class="site-nav" aria-label="Navigation principale">
           <a href="#services">Accompagnements</a>
           <a href="#faq">FAQ</a>
+          <a href="#zones">Zones</a>
           <a href="#apropos">Qui suis-je ?</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -219,6 +319,37 @@
           </div>
         </section>
 
+        <section class="section zones-section reveal" id="zones">
+          <div class="section-heading">
+            <p class="eyebrow">Zones d'intervention</p>
+            <h2>Saint-Maime et les communes proches, dans un rayon d'environ 20 à 30 km.</h2>
+          </div>
+          <p class="zones-intro">
+            J'interviens à <strong>Saint-Maime</strong> et dans les environs selon le lieu de séance. Pour vous aider à
+            trouver la page locale la plus utile, voici déjà trois secteurs détaillés.
+          </p>
+          <div class="cards-grid three city-links-grid">
+            <a class="city-link-card" href="forcalquier/">
+              <span class="city-link-card__eyebrow">Secteur local</span>
+              <h3>Forcalquier</h3>
+              <p>Un accompagnement rassurant à domicile ou en extérieur pour entretenir mobilité, équilibre et confiance.</p>
+              <span class="city-link-card__cta">Voir la page Forcalquier →</span>
+            </a>
+            <a class="city-link-card" href="volx/">
+              <span class="city-link-card__eyebrow">Secteur local</span>
+              <h3>Volx</h3>
+              <p>Des séances simples et progressives pour rester actif, reprendre en douceur et bouger avec plaisir.</p>
+              <span class="city-link-card__cta">Voir la page Volx →</span>
+            </a>
+            <a class="city-link-card" href="manosque/">
+              <span class="city-link-card__eyebrow">Secteur local</span>
+              <h3>Manosque</h3>
+              <p>Un suivi humain et personnalisé pour seniors, jeunes retraités et reprise d'activité sans pression.</p>
+              <span class="city-link-card__cta">Voir la page Manosque →</span>
+            </a>
+          </div>
+        </section>
+
         <!-- APA explanation -->
         <section class="section soft-panel reveal" id="apa">
           <div class="apa-layout">
@@ -298,7 +429,7 @@
             </details>
             <details>
               <summary>Proposez-vous des accompagnements à domicile ?</summary>
-              <p>Oui. J'interviens à domicile ainsi qu'en extérieur autour de Saint-Maime, dans un rayon d'environ 30 km.</p>
+              <p>Oui. J'interviens à domicile ainsi qu'en extérieur autour de Saint-Maime, dans un rayon d'environ 20 à 30 km selon le lieu de séance.</p>
             </details>
             <details>
               <summary>Affichez-vous vos tarifs ?</summary>
@@ -361,7 +492,7 @@
               </a>
               <div>
                 <strong>Zone</strong>
-                <span>Saint-Maime (04300) + 30 km</span>
+                <span>Saint-Maime (04300) + 20 à 30 km</span>
               </div>
             </div>
           </div>
@@ -393,7 +524,7 @@
 
       <footer class="site-footer">
         <p><strong>Nicolas Martinez</strong> · Activité physique adaptée & coach santé</p>
-        <p>Saint-Maime (04300) · À domicile et en extérieur · Séance d'essai offerte</p>
+        <p>Saint-Maime (04300) · À domicile et en extérieur · Forcalquier, Volx, Manosque et alentours</p>
       </footer>
     </div>
 

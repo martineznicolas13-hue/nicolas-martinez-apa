@@ -905,6 +905,184 @@ p { margin: 0 0 var(--space-sm); }
   transform: translateY(0);
 }
 
+/* ---- Local SEO blocks ---- */
+.zones-section {
+  padding-top: var(--space-md);
+}
+
+.zones-intro {
+  max-width: 68ch;
+  margin: -8px 0 var(--space-md);
+  color: var(--text-muted);
+}
+
+.city-links-grid {
+  align-items: stretch;
+}
+
+.city-link-card,
+.link-chip {
+  text-decoration: none;
+  color: inherit;
+}
+
+.city-link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(245, 240, 225, 0.84), rgba(255, 255, 255, 0.98));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease);
+}
+
+.city-link-card:hover,
+.city-link-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(107, 123, 60, 0.28);
+}
+
+.city-link-card__eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.city-link-card h3 {
+  margin-bottom: 2px;
+}
+
+.city-link-card p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.city-link-card__cta {
+  margin-top: auto;
+  padding-top: 6px;
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.mini-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  gap: var(--space-lg);
+  align-items: center;
+  padding-top: var(--space-xl);
+}
+
+.breadcrumb {
+  margin-bottom: 18px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--sage);
+}
+
+.breadcrumb span {
+  color: var(--text-light);
+}
+
+.local-page .hero-copy > *:last-child {
+  margin-bottom: 0;
+}
+
+.local-page .hero-visual {
+  min-height: 100%;
+}
+
+.local-page .hero-photo {
+  min-height: 440px;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--text-muted);
+}
+
+.check-list li::before {
+  content: '•';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.cta-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(260px, 0.92fr);
+  gap: clamp(20px, 3vw, 36px);
+  padding: clamp(24px, 4vw, 40px);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(245, 240, 225, 0.96), rgba(255, 255, 255, 0.98));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+}
+
+.cta-panel p {
+  color: var(--text-muted);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: var(--space-md);
+}
+
+.link-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.link-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  font-weight: 600;
+  transition: transform var(--duration) var(--ease), background var(--duration) var(--ease), border-color var(--duration) var(--ease);
+}
+
+.link-chip:hover,
+.link-chip:focus-visible {
+  background: var(--cream);
+  border-color: rgba(107, 123, 60, 0.28);
+  transform: translateY(-1px);
+}
+
+.local-page .site-footer {
+  margin-top: var(--space-lg);
+}
+
 /* ============================================================
    Responsive
    ============================================================ */
@@ -1070,5 +1248,32 @@ p { margin: 0 0 var(--space-sm); }
 
   .about-signature {
     padding: 14px 16px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .mini-hero,
+  .cta-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .button-row,
+  .link-chip-grid {
+    flex-direction: column;
+  }
+
+  .button-row .button,
+  .link-chip {
+    width: 100%;
+  }
+
+  .mini-hero {
+    padding-top: var(--space-md);
+  }
+
+  .zones-intro {
+    margin-top: -4px;
   }
 }
