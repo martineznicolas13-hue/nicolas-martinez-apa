@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.activite-physique-adaptee-nicolas-martinez.fr/sitemap.xml
+Sitemap: https://www.activite-physique-adaptee-nicolas-martinez.fr/sitemap.txt
