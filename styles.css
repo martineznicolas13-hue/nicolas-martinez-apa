@@ -196,30 +196,19 @@ p { margin: 0 0 var(--space-sm); }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
   text-decoration: none;
+  flex-shrink: 0;
   transition: opacity var(--duration) var(--ease);
 }
 
 .brand:hover { opacity: 0.85; }
 
-.brand-mark {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--cream), var(--cream-deep));
-  border: 1.5px solid var(--line-strong);
-  font-family: 'Lora', serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--sage);
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 48px;
+  max-width: min(100%, 220px);
 }
-
-.brand strong, .brand small { display: block; }
-.brand strong { font-size: 0.95rem; }
-.brand small { color: var(--text-light); font-size: 0.78rem; }
 
 .site-nav {
   display: flex;
@@ -1099,6 +1088,10 @@ p { margin: 0 0 var(--space-sm); }
     width: 100%;
     justify-content: flex-start;
   }
+
+  .brand-logo {
+    height: 44px;
+  }
 }
 
 /* Mobile — 720px */
@@ -1118,23 +1111,13 @@ p { margin: 0 0 var(--space-sm); }
   }
 
   .brand {
-    gap: 10px;
     min-width: 0;
     order: 1;
   }
 
-  .brand-mark {
-    width: 38px;
+  .brand-logo {
     height: 38px;
-    font-size: 0.92rem;
-  }
-
-  .brand strong {
-    font-size: 0.88rem;
-  }
-
-  .brand small {
-    display: none;
+    max-width: min(100%, 176px);
   }
 
   .header-cta {
