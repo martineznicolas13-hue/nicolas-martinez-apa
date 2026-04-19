@@ -204,7 +204,6 @@ p { margin: 0 0 var(--space-sm); }
 .brand:hover { opacity: 0.85; }
 
 .brand-name {
-  display: none;
   font-family: 'Lora', Georgia, serif;
   font-size: 1rem;
   font-weight: 600;
@@ -212,6 +211,10 @@ p { margin: 0 0 var(--space-sm); }
   letter-spacing: -0.01em;
   color: var(--text);
   white-space: nowrap;
+}
+
+.site-header .brand-name-mobile {
+  display: none;
 }
 
 .brand-logo {
@@ -1126,7 +1129,7 @@ p { margin: 0 0 var(--space-sm); }
     order: 1;
   }
 
-  .brand-name {
+  .site-header .brand-name-mobile {
     display: inline-block;
   }
 
