@@ -2,7 +2,7 @@
 
 Standalone static-site repository for Nicolas Martinez's personal website.
 
-This project was copied out of the Artisan workspace and kept intentionally simple:
+This is Nicolas Martinez's standalone website repository, kept intentionally simple:
 - `index.html` — main landing page
 - `styles.css` — site styles
 - no build step
