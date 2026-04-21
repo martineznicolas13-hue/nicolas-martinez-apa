@@ -560,7 +560,13 @@ h2 {
 }
 
 .contact-row--site {
-  grid-template-columns: 94px minmax(0, 1fr);
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 4px;
+}
+
+.contact-row--site dt {
+  min-width: 0;
 }
 
 .contact-list dt {
@@ -596,8 +602,8 @@ h2 {
 }
 
 .contact-row--site dd {
-  font-size: 9.4px;
-  letter-spacing: -0.01em;
+  font-size: 11px;
+  letter-spacing: 0;
 }
 
 .contact-list a {
