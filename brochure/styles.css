@@ -560,9 +560,7 @@ h2 {
 }
 
 .contact-row--site {
-  grid-template-columns: 1fr;
   align-items: start;
-  gap: 4px;
 }
 
 .contact-row--site dt {
@@ -604,6 +602,7 @@ h2 {
 .contact-row--site dd {
   font-size: 11px;
   letter-spacing: 0;
+  white-space: normal;
 }
 
 .contact-list a {
@@ -611,6 +610,11 @@ h2 {
   text-decoration: none;
   white-space: nowrap;
   transition: color 180ms ease;
+}
+
+.contact-row--site a {
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .contact-subline {
