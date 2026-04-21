@@ -124,9 +124,9 @@ img {
   width: min(210mm, 100%);
   min-height: 297mm;
   margin: 0 auto;
-  padding: 10.5mm 13mm 8mm;
+  padding: 9.5mm 11mm 6.5mm;
   display: grid;
-  gap: 4mm;
+  gap: 2.7mm;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.72)),
     linear-gradient(180deg, var(--paper) 0%, #fffdfa 100%);
@@ -150,13 +150,13 @@ img {
 .hero-section,
 .contact-grid {
   display: grid;
-  gap: 4mm;
+  gap: 2.7mm;
 }
 
 .brochure-header {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: start;
-  padding-bottom: 3mm;
+  padding-bottom: 2.2mm;
   border-bottom: 1px solid var(--line);
 }
 
@@ -168,13 +168,13 @@ img {
 
 .brand img {
   width: auto;
-  height: 14mm;
+  height: 12.5mm;
 }
 
 .header-side {
   display: grid;
   justify-items: end;
-  gap: 8px;
+  gap: 6px;
   text-align: right;
 }
 
@@ -183,7 +183,7 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .eyebrow,
@@ -193,7 +193,7 @@ img {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 10.5px;
+  font-size: 9.8px;
   font-weight: 700;
   color: var(--sage);
 }
@@ -202,10 +202,10 @@ img {
 .header-note {
   display: inline-flex;
   align-items: center;
-  min-height: 10mm;
-  padding: 0 14px;
+  min-height: 8.2mm;
+  padding: 0 12px;
   border-radius: var(--radius-pill);
-  font-size: 12px;
+  font-size: 11.4px;
   font-weight: 700;
 }
 
@@ -223,13 +223,13 @@ img {
 
 .hero-section {
   grid-template-columns: minmax(0, 1.15fr) minmax(72mm, 0.85fr);
-  align-items: stretch;
+  align-items: start;
 }
 
 .hero-copy {
   display: grid;
   align-content: start;
-  gap: 12px;
+  gap: 8px;
   padding: 3px 1px 0;
 }
 
@@ -245,11 +245,11 @@ h2 {
 
 h1 {
   max-width: 11.2ch;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16.5px;
 }
 
 .lead,
@@ -260,8 +260,8 @@ h2 {
 .section-intro {
   margin: 0;
   color: var(--text-muted);
-  font-size: 13.2px;
-  line-height: 1.48;
+  font-size: 11.9px;
+  line-height: 1.34;
 }
 
 .tag-list,
@@ -276,19 +276,19 @@ h2 {
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  padding-top: 2px;
+  gap: 7px;
+  padding-top: 1px;
 }
 
 .tag-list li,
 .mini-tags li {
   display: inline-flex;
   align-items: center;
-  min-height: 31px;
-  padding: 0 12px;
+  min-height: 27px;
+  padding: 0 10px;
   border-radius: var(--radius-pill);
-  font-size: 11.8px;
-  line-height: 1.25;
+  font-size: 10.9px;
+  line-height: 1.2;
 }
 
 .tag-list li {
@@ -307,13 +307,14 @@ h2 {
 
 .hero-note-card {
   display: grid;
-  gap: 8px;
-  padding: 14px 15px;
+  gap: 6px;
+  padding: 11px 12px;
   background: linear-gradient(135deg, rgba(244, 239, 229, 0.95), rgba(255, 255, 255, 0.82));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .hero-panel {
+  align-self: start;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(244, 239, 229, 0.96), rgba(255, 255, 255, 0.92));
   box-shadow: var(--shadow-md);
@@ -334,28 +335,28 @@ h2 {
 
 .hero-image {
   width: 100%;
-  height: 121px;
+  height: 132px;
   object-fit: cover;
   object-position: center 32%;
 }
 
 .hero-panel-body {
   display: grid;
-  gap: 9px;
-  padding: 15px 16px 16px;
+  gap: 7px;
+  padding: 11px 13px 12px;
 }
 
 .compact-list {
   display: grid;
-  gap: 7px;
+  gap: 5px;
 }
 
 .compact-list li {
   position: relative;
-  padding-left: 16px;
+  padding-left: 14px;
   color: var(--text-muted);
-  font-size: 12.7px;
-  line-height: 1.42;
+  font-size: 11.4px;
+  line-height: 1.3;
 }
 
 .compact-list li::before {
@@ -376,7 +377,7 @@ h2 {
 .card-grid,
 .contact-list {
   display: grid;
-  gap: 3mm;
+  gap: 2.3mm;
 }
 
 .card-grid {
@@ -386,13 +387,13 @@ h2 {
 .info-card,
 .steps-section,
 .contact-card {
-  padding: 13px;
+  padding: 10px;
 }
 
 .info-card {
   display: grid;
   align-content: start;
-  gap: 10px;
+  gap: 7px;
   background: var(--surface-strong);
   box-shadow: 0 10px 22px rgba(59, 49, 37, 0.05);
 }
@@ -411,38 +412,38 @@ h2 {
 
 .steps-section {
   display: grid;
-  gap: 12px;
+  gap: 9px;
   background: linear-gradient(135deg, rgba(247, 240, 229, 0.9), rgba(255, 255, 255, 0.92));
 }
 
 .section-heading {
   display: grid;
-  gap: 6px;
+  gap: 4px;
 }
 
 .section-heading--inline {
   grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
   align-items: end;
-  gap: 12px;
+  gap: 9px;
 }
 
 .section-intro {
-  padding-left: 12px;
+  padding-left: 9px;
   border-left: 1px solid rgba(191, 118, 87, 0.24);
 }
 
 .steps-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
+  gap: 6px;
 }
 
 .steps-list li {
   display: grid;
   align-content: start;
-  gap: 7px;
+  gap: 5px;
   min-height: 100%;
-  padding: 12px 11px;
+  padding: 10px 9px;
   border-radius: 16px;
   border: 1px solid rgba(107, 123, 60, 0.11);
   background: rgba(255, 255, 255, 0.78);
@@ -452,11 +453,11 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 29px;
+  height: 29px;
   border-radius: 50%;
   color: #fff;
-  font-size: 12px;
+  font-size: 10.6px;
   font-weight: 800;
   letter-spacing: 0.12em;
   background: linear-gradient(135deg, var(--terracotta), #d19072);
@@ -464,8 +465,8 @@ h2 {
 }
 
 .steps-list strong {
-  font-size: 13.6px;
-  line-height: 1.28;
+  font-size: 12.2px;
+  line-height: 1.2;
 }
 
 .contact-grid {
@@ -474,7 +475,7 @@ h2 {
 
 .contact-card {
   display: grid;
-  gap: 9px;
+  gap: 7px;
   background: rgba(255, 255, 255, 0.84);
 }
 
@@ -489,15 +490,15 @@ h2 {
 
 .bio-layout {
   display: grid;
-  grid-template-columns: 112px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 10px;
   align-items: start;
 }
 
 .bio-photo-card {
   margin: 0;
   display: grid;
-  gap: 7px;
+  gap: 5px;
 }
 
 .bio-photo-card img {
@@ -515,14 +516,14 @@ h2 {
 
 .bio-copy {
   display: grid;
-  gap: 8px;
+  gap: 6px;
 }
 
 .mini-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  padding-top: 2px;
+  gap: 6px;
+  padding-top: 1px;
 }
 
 .mini-tags li {
@@ -533,18 +534,18 @@ h2 {
 
 .contact-card-top {
   display: grid;
-  gap: 8px;
+  gap: 6px;
 }
 
 .contact-list {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 2px 0 0;
+  margin: 1px 0 0;
 }
 
 .contact-list div {
   display: grid;
   gap: 4px;
-  padding: 12px 11px;
+  padding: 9px 9px;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.74);
   border: 1px solid rgba(107, 123, 60, 0.1);
@@ -552,9 +553,9 @@ h2 {
 
 .contact-list dd {
   margin: 0;
-  font-size: 13.1px;
+  font-size: 11.6px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.26;
   word-break: break-word;
 }
 
@@ -678,7 +679,7 @@ h2 {
     width: 210mm;
     height: 296mm;
     min-height: 296mm;
-    padding: 10.5mm 13mm 8mm;
+    padding: 9.5mm 11mm 6.5mm;
     border: 0;
     border-radius: 0;
     box-shadow: none;
