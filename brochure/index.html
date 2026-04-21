@@ -3,693 +3,256 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brochure APA Nicolas Martinez | Télécharger le PDF</title>
+    <title>Brochure Nicolas Martinez | Aperçu et téléchargement PDF</title>
     <meta
       name="description"
-      content="Brochure une page de Nicolas Martinez, enseignant en activité physique adaptée à Saint-Maime : accompagnements, publics, méthode, zone d'intervention et contact. Téléchargement PDF direct."
+      content="Aperçu rapide et téléchargement direct de la brochure PDF une page de Nicolas Martinez, enseignant en activité physique adaptée à Saint-Maime."
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="canonical" href="https://www.activite-physique-adaptee-nicolas-martinez.fr/brochure/" />
     <meta name="theme-color" content="#FAFAF5" />
-    <meta property="og:title" content="Brochure APA Nicolas Martinez" />
+    <meta property="og:title" content="Brochure Nicolas Martinez" />
     <meta
       property="og:description"
-      content="Une brochure une page à consulter ou télécharger pour présenter l'accompagnement de Nicolas Martinez en activité physique adaptée."
+      content="Page d'aperçu minimal pour ouvrir ou télécharger la brochure PDF une page de Nicolas Martinez."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.activite-physique-adaptee-nicolas-martinez.fr/brochure/" />
-    <meta property="og:image" content="https://www.activite-physique-adaptee-nicolas-martinez.fr/images/hero-parcours-equilibre.png" />
+    <meta property="og:image" content="https://www.activite-physique-adaptee-nicolas-martinez.fr/brochure/nicolas-martinez-brochure-preview.png" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <style>
-:root {
-  --sage: #6b7b3c;
-  --sage-light: #8ea058;
-  --sage-muted: rgba(107, 123, 60, 0.12);
-  --terracotta: #c67b5c;
-  --sand: #efe3d3;
-  --bg: #fafaf5;
-  --surface: rgba(255, 255, 255, 0.88);
-  --surface-strong: #ffffff;
-  --text: #23231f;
-  --text-muted: #5d5d50;
-  --line: rgba(107, 123, 60, 0.16);
-  --shadow: 0 24px 70px rgba(41, 44, 31, 0.08);
-  --radius-lg: 28px;
-  --radius-md: 20px;
-  --radius-sm: 14px;
-  --radius-pill: 999px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: 'Raleway', system-ui, sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(143, 160, 88, 0.16), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(198, 123, 92, 0.14), transparent 28%),
-    var(--bg);
-}
-
-a {
-  color: inherit;
-}
-
-button {
-  font: inherit;
-  cursor: pointer;
-}
-
-.background-orb {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(24px);
-  opacity: 0.45;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.orb-1 {
-  width: 18rem;
-  height: 18rem;
-  background: rgba(143, 160, 88, 0.18);
-  top: 4rem;
-  right: 6vw;
-}
-
-.orb-2 {
-  width: 22rem;
-  height: 22rem;
-  background: rgba(198, 123, 92, 0.12);
-  bottom: 0;
-  left: 4vw;
-}
-
-.page-shell {
-  position: relative;
-  z-index: 1;
-  width: min(1180px, calc(100% - 32px));
-  margin: 0 auto;
-  padding: 24px 0 48px;
-}
-
-.card-surface {
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background: var(--surface);
-  backdrop-filter: blur(18px);
-  box-shadow: var(--shadow);
-}
-
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 24px;
-  padding: 14px 18px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.76);
-  backdrop-filter: blur(18px);
-}
-
-.brand img {
-  display: block;
-  width: auto;
-  max-width: min(100%, 240px);
-  height: 46px;
-}
-
-.topbar-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.mini-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 42px;
-  padding: 0 18px;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--line);
-  text-decoration: none;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.75);
-}
-
-.mini-link.strong {
-  color: var(--surface-strong);
-  border-color: transparent;
-  background: linear-gradient(135deg, var(--sage), var(--sage-light));
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-  gap: 28px;
-  padding: clamp(22px, 4vw, 38px);
-}
-
-.eyebrow,
-.section-tag,
-.preview-label,
-.highlight-kicker,
-.share-label {
-  margin: 0 0 12px;
-  color: var(--sage);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-family: 'Lora', Georgia, serif;
-  line-height: 1.14;
-}
-
-h1 {
-  font-size: clamp(2.5rem, 5vw, 4.3rem);
-  margin-bottom: 18px;
-  letter-spacing: -0.03em;
-}
-
-.hero-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.lead {
-  margin: 0;
-  max-width: 62ch;
-  font-size: 1.08rem;
-  line-height: 1.8;
-  color: var(--text-muted);
-}
-
-.cta-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.cta-row.compact {
-  margin-top: -6px;
-}
-
-.button,
-.copy-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50px;
-  padding: 0 22px;
-  border-radius: var(--radius-pill);
-  text-decoration: none;
-  border: 1px solid var(--line);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-}
-
-.button:hover,
-.copy-button:hover,
-.button:focus-visible,
-.copy-button:focus-visible {
-  transform: translateY(-1px);
-  box-shadow: 0 16px 34px rgba(41, 44, 31, 0.08);
-}
-
-.button.primary {
-  color: #fff;
-  border-color: transparent;
-  background: linear-gradient(135deg, var(--sage), var(--sage-light));
-}
-
-.button.secondary {
-  background: rgba(255, 255, 255, 0.92);
-}
-
-.button.ghost,
-.copy-button {
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.68);
-}
-
-.share-panel {
-  display: grid;
-  gap: 16px;
-  padding: 20px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(248, 248, 241, 0.88));
-}
-
-.share-list {
-  display: grid;
-  gap: 8px;
-  padding-left: 18px;
-  margin: 0;
-  color: var(--text-muted);
-}
-
-.share-list a {
-  word-break: break-word;
-}
-
-.share-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.copy-button {
-  min-height: 46px;
-  padding-inline: 18px;
-}
-
-.copy-status {
-  min-height: 1.4em;
-  margin: 0;
-  color: var(--text-muted);
-}
-
-.highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.highlights-grid article,
-.info-card,
-.summary-grid article {
-  padding: 18px;
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(107, 123, 60, 0.1);
-}
-
-.highlights-grid h2 {
-  font-size: 1.03rem;
-  font-family: 'Raleway', system-ui, sans-serif;
-  line-height: 1.55;
-}
-
-.preview-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 22px;
-  border-radius: calc(var(--radius-lg) - 6px);
-  background: linear-gradient(180deg, rgba(239, 227, 211, 0.62), rgba(255, 255, 255, 0.86));
-  border: 1px solid rgba(198, 123, 92, 0.18);
-}
-
-.preview-topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.preview-topbar h2 {
-  font-size: 1.45rem;
-}
-
-.preview-badge {
-  display: inline-flex;
-  align-items: center;
-  min-height: 36px;
-  padding: 0 14px;
-  border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.74);
-  border: 1px solid rgba(107, 123, 60, 0.16);
-  font-size: 0.92rem;
-  color: var(--text-muted);
-}
-
-.preview-frame {
-  position: relative;
-  overflow: hidden;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(107, 123, 60, 0.14);
-}
-
-.preview-link {
-  display: block;
-  text-decoration: none;
-}
-
-.preview-link img {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #fff;
-}
-
-.preview-fallback {
-  position: absolute;
-  inset: auto 16px 16px 16px;
-  padding: 14px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(107, 123, 60, 0.12);
-  box-shadow: 0 12px 30px rgba(41, 44, 31, 0.08);
-}
-
-.preview-fallback p {
-  margin: 0 0 12px;
-  color: var(--text-muted);
-}
-
-.content-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 22px;
-}
-
-.info-card {
-  padding: 24px;
-}
-
-.info-card.accent {
-  background: linear-gradient(180deg, rgba(143, 160, 88, 0.08), rgba(255, 255, 255, 0.86));
-}
-
-.bullet-list {
-  display: grid;
-  gap: 12px;
-  margin: 0;
-  padding-left: 18px;
-  color: var(--text-muted);
-  line-height: 1.7;
-}
-
-.summary {
-  margin-top: 22px;
-  padding: 28px;
-}
-
-.summary-heading {
-  max-width: 58ch;
-  margin-bottom: 18px;
-}
-
-.summary-heading h2 {
-  font-size: clamp(1.7rem, 3vw, 2.5rem);
-}
-
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.summary-grid article h3 {
-  margin-bottom: 10px;
-  font-size: 1.12rem;
-}
-
-.summary-grid article p,
-.page-footer p {
-  margin: 0;
-  color: var(--text-muted);
-  line-height: 1.7;
-}
-
-.page-footer {
-  display: grid;
-  gap: 8px;
-  margin-top: 22px;
-  padding: 24px 6px 0;
-  text-align: center;
-}
-
-.page-footer a {
-  color: inherit;
-}
-
-@media (max-width: 1080px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .highlights-grid,
-  .summary-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 760px) {
-  .page-shell {
-    width: min(100% - 20px, 1180px);
-    padding-top: 12px;
-  }
-
-  .topbar {
-    align-items: flex-start;
-    border-radius: 22px;
-  }
-
-  .topbar,
-  .preview-topbar {
-    flex-direction: column;
-  }
-
-  .brand img {
-    height: 40px;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 10vw, 3rem);
-  }
-
-  .hero,
-  .summary,
-  .info-card,
-  .preview-panel {
-    padding: 18px;
-  }
-
-  .content-grid,
-  .highlights-grid,
-  .summary-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .button,
-  .copy-button,
-  .mini-link {
-    width: 100%;
-  }
-
-  .topbar-actions,
-  .cta-row,
-  .share-buttons {
-    width: 100%;
-  }
-}
-
+      :root {
+        --bg: #fafaf5;
+        --surface: rgba(255, 255, 255, 0.92);
+        --line: rgba(107, 123, 60, 0.16);
+        --sage: #6b7b3c;
+        --sage-light: #8fa058;
+        --text: #23231f;
+        --text-muted: #5d5d50;
+        --shadow: 0 24px 70px rgba(41, 44, 31, 0.08);
+        --radius-lg: 30px;
+        --radius-md: 20px;
+        --radius-pill: 999px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(143, 160, 88, 0.15), transparent 30%),
+          radial-gradient(circle at bottom right, rgba(198, 123, 92, 0.12), transparent 24%),
+          var(--bg);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        width: min(1100px, calc(100% - 28px));
+        margin: 0 auto;
+        padding: 24px 0 28px;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+        overflow: hidden;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+        gap: 24px;
+        align-items: start;
+        padding: clamp(18px, 3vw, 28px);
+      }
+
+      .copy {
+        display: grid;
+        gap: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .brand img {
+        display: block;
+        width: auto;
+        height: 44px;
+        max-width: min(100%, 240px);
+      }
+
+      .eyebrow {
+        margin: 0;
+        color: var(--sage);
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2rem, 4.2vw, 3.25rem);
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+      }
+
+      .lead,
+      .meta,
+      .back-link {
+        margin: 0;
+        color: var(--text-muted);
+        line-height: 1.7;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        padding: 0 22px;
+        border-radius: var(--radius-pill);
+        text-decoration: none;
+        border: 1px solid var(--line);
+        transition: transform 180ms ease, box-shadow 180ms ease;
+      }
+
+      .button:hover,
+      .button:focus-visible,
+      .preview:hover,
+      .preview:focus-visible {
+        transform: translateY(-1px);
+        box-shadow: 0 16px 34px rgba(41, 44, 31, 0.08);
+      }
+
+      .button.primary {
+        color: #fff;
+        border-color: transparent;
+        background: linear-gradient(135deg, var(--sage), var(--sage-light));
+      }
+
+      .button.secondary {
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      .meta {
+        font-size: 0.95rem;
+      }
+
+      .back-link {
+        display: inline-flex;
+        width: fit-content;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(107, 123, 60, 0.22);
+      }
+
+      .preview {
+        display: block;
+        text-decoration: none;
+        border-radius: 24px;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid rgba(107, 123, 60, 0.14);
+      }
+
+      .preview img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 860px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .shell {
+          width: min(100% - 16px, 1100px);
+          padding-top: 12px;
+          padding-bottom: 16px;
+        }
+
+        .layout {
+          gap: 18px;
+          padding: 16px;
+        }
+
+        .brand img {
+          height: 40px;
+        }
+
+        .actions {
+          width: 100%;
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="background-orb orb-1" aria-hidden="true"></div>
-    <div class="background-orb orb-2" aria-hidden="true"></div>
+    <main class="shell">
+      <section class="panel" aria-labelledby="brochure-title">
+        <div class="layout">
+          <div class="copy">
+            <a class="brand" href="../">
+              <img
+                src="../images/logo-nicolas-martinez-apa.png"
+                alt="Nicolas Martinez - Activité physique adaptée"
+                width="732"
+                height="180"
+              />
+            </a>
 
-    <div class="page-shell">
-      <header class="topbar">
-        <a class="brand" href="../">
-          <img
-            src="../images/logo-nicolas-martinez-apa.png"
-            alt="Nicolas Martinez - Activité physique adaptée"
-            width="732"
-            height="180"
-          />
-        </a>
-        <div class="topbar-actions">
-          <a class="mini-link" href="../">Retour au site</a>
-          <a class="mini-link strong" href="nicolas-martinez-brochure.pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
+            <div>
+              <p class="eyebrow">Brochure PDF · accès direct</p>
+              <h1 id="brochure-title">Aperçu rapide de la brochure PDF.</h1>
+            </div>
+
+            <p class="lead">Cette page sert uniquement à ouvrir ou télécharger la brochure une page de Nicolas Martinez.</p>
+
+            <div class="actions">
+              <a class="button primary" href="nicolas-martinez-brochure.pdf" download>Télécharger le PDF</a>
+              <a class="button secondary" href="nicolas-martinez-brochure.pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
+            </div>
+
+            <p class="meta">Format A4 · 1 page · cliquez aussi sur l'aperçu pour ouvrir le document.</p>
+            <a class="back-link" href="../">Retour au site principal</a>
+          </div>
+
+          <a class="preview" href="nicolas-martinez-brochure.pdf" target="_blank" rel="noopener" aria-label="Ouvrir la brochure PDF Nicolas Martinez">
+            <img
+              src="nicolas-martinez-brochure-preview.png"
+              alt="Aperçu de la brochure PDF Nicolas Martinez"
+              width="1200"
+              height="1697"
+            />
+          </a>
         </div>
-      </header>
-
-      <main>
-        <section class="hero card-surface">
-          <div class="hero-copy">
-            <p class="eyebrow">Brochure à partager · 1 page · PDF direct</p>
-            <h1>La brochure Nicolas Martinez est prête à être envoyée, ouverte ou téléchargée.</h1>
-            <p class="lead">
-              Retrouvez en une page l'essentiel de l'accompagnement en <strong>activité physique adaptée</strong> :
-              publics concernés, déroulé, séance d'essai offerte, zone d'intervention et contact direct.
-            </p>
-            <div class="cta-row">
-              <a class="button primary" href="nicolas-martinez-brochure.pdf" download>
-                Télécharger le PDF
-              </a>
-              <a class="button secondary" href="nicolas-martinez-brochure.pdf" target="_blank" rel="noopener">
-                Ouvrir le PDF
-              </a>
-            </div>
-            <div class="cta-row compact">
-              <a class="button ghost" href="tel:0678235875">Appeler Nicolas</a>
-              <a class="button ghost" href="mailto:martineznicolas13@gmail.com?subject=Demande%20depuis%20la%20brochure">Envoyer un email</a>
-            </div>
-
-            <div class="share-panel">
-              <div>
-                <p class="share-label">Liens publics prêts à partager</p>
-                <ul class="share-list">
-                  <li><strong>Page brochure :</strong> <a href="https://www.activite-physique-adaptee-nicolas-martinez.fr/brochure/">activite-physique-adaptee-nicolas-martinez.fr/brochure/</a></li>
-                  <li><strong>PDF direct :</strong> <a href="https://www.activite-physique-adaptee-nicolas-martinez.fr/brochure/nicolas-martinez-brochure.pdf">…/brochure/nicolas-martinez-brochure.pdf</a></li>
-                </ul>
-              </div>
-              <div class="share-buttons">
-                <button type="button" class="copy-button" data-copy="https://www.activite-physique-adaptee-nicolas-martinez.fr/brochure/">
-                  Copier le lien brochure
-                </button>
-                <button type="button" class="copy-button" data-copy="https://www.activite-physique-adaptee-nicolas-martinez.fr/brochure/nicolas-martinez-brochure.pdf">
-                  Copier le lien PDF
-                </button>
-              </div>
-              <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
-            </div>
-
-            <div class="highlights-grid">
-              <article>
-                <span class="highlight-kicker">Publics</span>
-                <h2>Personnes âgées, jeunes retraités, profils avec fragilités ou objectif santé.</h2>
-              </article>
-              <article>
-                <span class="highlight-kicker">Formats</span>
-                <h2>À domicile, en extérieur, en EHPAD, avec un suivi régulier et progressif.</h2>
-              </article>
-              <article>
-                <span class="highlight-kicker">Repère fort</span>
-                <h2>Séance d'essai offerte pour faire connaissance et cadrer le besoin.</h2>
-              </article>
-            </div>
-          </div>
-
-          <aside class="preview-panel" aria-labelledby="preview-title">
-            <div class="preview-topbar">
-              <div>
-                <p class="preview-label">Aperçu</p>
-                <h2 id="preview-title">Brochure PDF une page</h2>
-              </div>
-              <span class="preview-badge">A4 · prêt à envoyer</span>
-            </div>
-            <div class="preview-frame">
-              <a class="preview-link" href="nicolas-martinez-brochure.pdf" target="_blank" rel="noopener">
-                <img
-                  src="nicolas-martinez-brochure-preview.png"
-                  alt="Aperçu de la brochure PDF Nicolas Martinez"
-                  width="1200"
-                  height="1697"
-                />
-              </a>
-              <div class="preview-fallback">
-                <p>Aperçu de la brochure une page. Cliquez dessus pour ouvrir le PDF complet.</p>
-                <a class="button secondary" href="nicolas-martinez-brochure.pdf" target="_blank" rel="noopener">Voir le PDF</a>
-              </div>
-            </div>
-          </aside>
-        </section>
-
-        <section class="content-grid">
-          <article class="info-card card-surface">
-            <p class="section-tag">Ce que contient la brochure</p>
-            <ul class="bullet-list">
-              <li>Une présentation claire de l'APA et de l'objectif : bouger mieux, gagner en confiance, préserver l'autonomie.</li>
-              <li>Les accompagnements : domicile, extérieur, EHPAD, progression dans le temps.</li>
-              <li>Le déroulé en 4 étapes : premier échange, essai offert, plan d'accompagnement, suivi.</li>
-              <li>Le contact direct de Nicolas Martinez et sa zone d'intervention autour de Saint-Maime.</li>
-            </ul>
-          </article>
-
-          <article class="info-card card-surface accent">
-            <p class="section-tag">Pourquoi cette page est utile</p>
-            <ul class="bullet-list">
-              <li>À partager facilement depuis Instagram, un email ou un message.</li>
-              <li>À ouvrir rapidement sur mobile avant de télécharger le PDF.</li>
-              <li>À présenter en une seule vue un accompagnement rassurant, humain et structuré.</li>
-            </ul>
-          </article>
-        </section>
-
-        <section class="summary card-surface">
-          <div class="summary-heading">
-            <p class="eyebrow">Résumé express</p>
-            <h2>Une approche sérieuse, chaleureuse et réellement adaptée.</h2>
-          </div>
-          <div class="summary-grid">
-            <article>
-              <h3>Pour qui ?</h3>
-              <p>Pour les personnes qui veulent rester actives durablement, reprendre en douceur ou sécuriser leurs déplacements du quotidien.</p>
-            </article>
-            <article>
-              <h3>Ce qui est travaillé</h3>
-              <p>Mobilité, équilibre, marche, respiration, coordination, reprise de confiance et remise en mouvement sans logique de performance.</p>
-            </article>
-            <article>
-              <h3>Qui est Nicolas ?</h3>
-              <p>Enseignant en activité physique adaptée et santé, avec près de 10 ans d'accompagnement, reconnu pour sa patience et son empathie.</p>
-            </article>
-            <article>
-              <h3>Où intervient-il ?</h3>
-              <p>Depuis Saint-Maime, à domicile ou en extérieur, autour de Forcalquier, Volx, Manosque, Villeneuve, Pierrevert, Mane et dans un rayon d'environ 20 à 30 km.</p>
-            </article>
-          </div>
-        </section>
-      </main>
-
-      <footer class="page-footer">
-        <p><strong>Nicolas Martinez</strong> · Activité physique adaptée & sport santé</p>
-        <p>
-          <a href="tel:0678235875">06 78 23 58 75</a>
-          <span aria-hidden="true">·</span>
-          <a href="mailto:martineznicolas13@gmail.com">martineznicolas13@gmail.com</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://www.activite-physique-adaptee-nicolas-martinez.fr/brochure/">Page brochure</a>
-        </p>
-      </footer>
-    </div>
-
-    <script>
-      (function () {
-        var buttons = document.querySelectorAll('[data-copy]');
-        var status = document.getElementById('copy-status');
-
-        buttons.forEach(function (button) {
-          button.addEventListener('click', async function () {
-            var text = button.getAttribute('data-copy');
-            try {
-              await navigator.clipboard.writeText(text);
-              status.textContent = 'Lien copié : ' + text;
-            } catch (error) {
-              status.textContent = 'Copie impossible automatiquement. Voici le lien : ' + text;
-            }
-          });
-        });
-      })();
-    </script>
+      </section>
+    </main>
   </body>
 </html>
