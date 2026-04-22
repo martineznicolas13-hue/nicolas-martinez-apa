@@ -1167,13 +1167,6 @@ p { margin: 0 0 var(--space-sm); }
 
 /* Mobile — 720px */
 @media (max-width: 720px) {
-  :root {
-    --space-sm: 12px;
-    --space-md: 18px;
-    --space-lg: 32px;
-    --space-xl: 48px;
-  }
-
   .page-shell {
     width: min(100% - 20px, var(--max-width));
   }
@@ -1210,165 +1203,27 @@ p { margin: 0 0 var(--space-sm); }
     order: 2;
   }
 
-  h1 { font-size: clamp(1.9rem, 7.2vw, 2.5rem); }
-  h2 { font-size: clamp(1.35rem, 5.8vw, 1.9rem); }
+  h1 { font-size: clamp(2.2rem, 9vw, 3rem); }
+  h2 { font-size: clamp(1.6rem, 7vw, 2.4rem); }
 
-  body {
-    font-size: 0.96rem;
-    line-height: 1.62;
-  }
+  .hero { padding-top: var(--space-md); }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .button { width: 100%; }
+  .section { padding: var(--space-lg) 0; }
 
-  .lead {
-    font-size: 1rem;
-    line-height: 1.58;
-    max-width: none;
-  }
-
-  .eyebrow {
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    margin-bottom: 0;
-  }
-
-  .section {
-    padding: var(--space-lg) 0;
-  }
-
-  .section-heading {
-    margin-bottom: var(--space-md);
-  }
-
-  .hero,
-  .image-story,
-  .apa-layout,
-  .about-card {
-    grid-template-columns: minmax(0, 1.15fr) clamp(104px, 34vw, 164px);
-    gap: 14px;
-    align-items: start;
-  }
-
-  .hero {
-    padding-top: var(--space-sm);
-  }
-
-  .hero-copy,
-  .story-copy,
-  .apa-copy-inner,
-  .about-copy {
-    display: grid;
-    gap: 10px;
-  }
-
-  .hero-copy > *,
-  .story-copy > *,
-  .apa-copy-inner > *,
-  .about-copy > * {
-    margin-bottom: 0;
-  }
-
-  .hero-actions {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    margin: 8px 0 0;
-  }
-
-  .hero-actions .button {
-    width: 100%;
-    min-width: 0;
-    padding: 11px 12px;
-    font-size: 0.88rem;
-  }
-
-  .hero-actions .button:first-child {
-    grid-column: 1 / -1;
-  }
-
-  .hero-visual,
-  .story-photo,
-  .apa-visual,
-  .about-portrait-frame {
-    border-radius: 18px;
-  }
-
-  .hero-photo,
-  .local-page .hero-photo {
-    min-height: clamp(180px, 52vw, 240px);
-    object-position: center 20%;
-  }
-
-  .story-photo,
-  .story-photo img,
-  .story-photo video {
-    min-height: clamp(170px, 52vw, 240px);
-    height: 100%;
-  }
-
-  .story-copy {
-    gap: 8px;
-  }
-
-  .soft-panel {
-    padding: 18px;
-  }
+  .soft-panel { padding: var(--space-md); }
 
   .apa-layout {
-    gap: 16px;
-  }
-
-  .apa-copy-inner {
-    max-width: none;
-    gap: 10px;
-  }
-
-  .apa-copy p {
-    max-width: none;
+    gap: 24px;
   }
 
   .apa-visual {
     width: 100%;
-    min-height: clamp(180px, 54vw, 245px);
-    justify-self: stretch;
-  }
-
-  .cards-grid {
-    gap: 12px;
-  }
-
-  .cards-grid.three,
-  .cards-grid.two,
-  .steps-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .cards-grid.three > :last-child {
-    grid-column: 1 / -1;
-  }
-
-  .info-card,
-  .service-card,
-  .steps-grid article {
-    padding: 16px;
-    border-radius: 18px;
-  }
-
-  .service-card {
-    min-height: 0;
-  }
-
-  .steps-grid {
-    gap: 12px;
-  }
-
-  .steps-grid span {
-    width: 36px;
-    height: 36px;
-    margin-bottom: 10px;
+    min-height: 300px;
   }
 
   .about-card {
-    gap: 16px;
-    padding: 18px;
+    gap: 22px;
   }
 
   .about-copy,
@@ -1378,35 +1233,12 @@ p { margin: 0 0 var(--space-sm); }
 
   .about-notes {
     grid-template-columns: 1fr;
-    gap: 6px;
   }
 
-  .about-signature {
-    margin-top: 8px;
-    padding: 12px 14px;
-  }
-
-  .contact-section {
-    gap: 20px;
-  }
-
-  .contact-cards {
-    margin-top: var(--space-sm);
-    gap: 10px;
-  }
-
-  .contact-cards a,
-  .contact-cards div,
-  .contact-form {
-    padding: 16px;
-  }
-
-  .faq-list {
-    gap: 8px;
-  }
-
-  .faq-list details {
-    padding: 14px 16px;
+  .story-photo,
+  .story-photo img,
+  .story-photo video {
+    min-height: 320px;
   }
 
   .site-nav {
@@ -1434,38 +1266,17 @@ p { margin: 0 0 var(--space-sm); }
 
 /* Small mobile — 375px */
 @media (max-width: 400px) {
-  .hero,
-  .image-story,
-  .apa-layout,
-  .about-card {
-    grid-template-columns: minmax(0, 1fr) 108px;
-    gap: 12px;
+  :root {
+    --space-lg: 36px;
+    --space-xl: 48px;
   }
 
   .header-cta {
     padding-inline: 12px;
   }
 
-  .hero-actions {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-actions .button:first-child {
-    grid-column: auto;
-  }
-
-  .cards-grid.three,
-  .cards-grid.two,
-  .steps-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cards-grid.three > :last-child {
-    grid-column: auto;
-  }
-
   .about-signature {
-    padding: 12px 14px;
+    padding: 14px 16px;
   }
 }
 
